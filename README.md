@@ -11,7 +11,7 @@ greatly varying styles to be created.
 
 To use 'CardCreate' you will need a Java Development Kit and Maven installed. 
 
-## Cloning
+## Cloning and Building
 
 The code has been structured as a standard Maven project which means you need 
 to have Maven and a JDK installed. A quick web search will help, but if not 
@@ -24,15 +24,15 @@ The following commands clone and generate an executable jar file in the
 	cd CardCreate/
     mvn clean install
 
-## Setting up 'CardCreate' environment
+## Setting up the 'CardCreate' environment
 
 'CardCreate' works in an environment which provides the component images 
 needed to compose the playing card images. BEFORE running 'CardCreate' it is 
 recommended that the environment is setup first. The GitHub repository 
 contains the file 'CardCreate/CardWork.tar.gz' which provides this 
 environment. It is recommended that this environment is set up outside of the 
-'CardCreate-1.0' directory. The environment can be set up in the parent 
-directory of 'CardCreate-1.0' with the following commands:
+'CardCreate' directory. The environment can be set up in the parent 
+directory of 'CardCreate' with the following commands:
 
     cd ..
     cp CardCreate/CardWork.tar.gz .
@@ -42,20 +42,18 @@ directory of 'CardCreate-1.0' with the following commands:
 
 ## Running
 
-This jar file can be launched from the command line:
+'CardCreate' can be launched using a file explorer or from the command line:
 
     java -jar ./target/CardCreate-jar-with-dependencies.jar
-
-CardCreate can also be launched using a file explorer.
- 
-The standard "mvn clean" command will remove all generated files, including 
-any environment file paths previously set up.
 
 On initial running, 'CardCreate' requires you to select the environment you 
 setup. Browse to the CardWork directory created above from the 
 CardCreate/CardWork.tar.gz file. Once setup you will not be prompted again, 
 however, you can click on the "Browse..." button at any time to select another 
 instance of the environment.
+
+The standard `mvn clean` command will remove all generated files, including 
+any environment file paths previously set up.
 
 ## Further reading
 
@@ -73,3 +71,6 @@ This code has the following points of interest:
   * CardCreate is the Java version of cardgen.
   * cardgen: https://github.com/PhilLockett/cardgen.git
   * CardCreate is a maven project.
+  * The user GUI was developed using NetBeans.
+  * The NetBeans .form files are supplied to ease GUI design changes.
+  

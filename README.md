@@ -3,6 +3,8 @@
 'CardCreate' is a Java application that generates images representing playing 
 cards.
 
+**USE AT OWN RISK.**
+
 ## Overview
 
 'CardCreate' generates .png images representing a pack of playing cards from 

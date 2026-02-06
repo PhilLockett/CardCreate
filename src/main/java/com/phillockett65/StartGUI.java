@@ -701,7 +701,7 @@ public class StartGUI extends javax.swing.JFrame {
                 .addComponent(nextSuitjButton))
         );
 
-        itemModifyjPanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Modify Card Item (‰ - per mille)"));
+        itemModifyjPanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Modify Card Item (â€° - per mille)"));
 
         keepAspectRatiojCheckBox.setSelected(true);
         keepAspectRatiojCheckBox.setText("Keep Image Aspect Ratio");
@@ -712,14 +712,14 @@ public class StartGUI extends javax.swing.JFrame {
             }
         });
 
-        itemHeightjLabel.setText("Item Height (‰):");
-        itemHeightjLabel.setToolTipText("Height of selected card item as a ‰ of card height");
+        itemHeightjLabel.setText("Item Height (â€°):");
+        itemHeightjLabel.setToolTipText("Height of selected card item as a â€° of card height");
 
-        itemCentreXjLabel.setText("Item Centre X (‰):");
-        itemCentreXjLabel.setToolTipText("X co-ordinate of the centre of the selected card item as a ‰ of card width");
+        itemCentreXjLabel.setText("Item Centre X (â€°):");
+        itemCentreXjLabel.setToolTipText("X co-ordinate of the centre of the selected card item as a â€° of card width");
 
-        itemCentreYjLabel.setText("Item Centre Y (‰):");
-        itemCentreYjLabel.setToolTipText("Y co-ordinate of the centre of the selected card item as a ‰ of card height");
+        itemCentreYjLabel.setText("Item Centre Y (â€°):");
+        itemCentreYjLabel.setToolTipText("Y co-ordinate of the centre of the selected card item as a â€° of card height");
 
         itemHeightjSpinner.setModel(new javax.swing.SpinnerNumberModel(10, 0, 1000, 1));
         itemHeightjSpinner.addChangeListener(new javax.swing.event.ChangeListener() {
